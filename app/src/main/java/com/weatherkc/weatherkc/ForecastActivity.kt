@@ -11,14 +11,6 @@ class ForecastActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forecast)
 
-
-        european_system_button?.setOnClickListener{
-            forecast_image.setImageResource(R.drawable.offline_weather)
-        }
-        american_system_button.setOnClickListener{
-            forecast_image.setImageResource(R.drawable.offline_weather2)
-        }
-
     }
 
     override fun onSaveInstanceState(outState: Bundle?, outPersistentState: PersistableBundle?) {
