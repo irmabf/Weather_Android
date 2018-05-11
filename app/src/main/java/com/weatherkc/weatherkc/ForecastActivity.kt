@@ -37,8 +37,6 @@ class ForecastActivity : AppCompatActivity() {
                 description = "Soleado con alguna nube",
                 icon = R.drawable.ico_01)
 
-
     }
-
 }
 
