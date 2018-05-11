@@ -12,7 +12,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener  {
 
     val TAG = MainActivity::class.java.canonicalName
 
-    var forecastImage: ImageView? = null
+    //lateinit  var forecastImage: ImageView
+    val forecastImage by lazy {
+        findViewById<ImageView>(R.id.forecast_image)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,13 +24,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener  {
         val europeanButton = findViewById<Button>(R.id.european_system_button)
         val americanButton = findViewById<Button>(R.id.american_system_button)
 
-        forecastImage = findViewById(R.id.forecast_image)
+        //git forecastImage = findViewById(R.id.forecast_image)
 
        // if (europeanButton != null){
         //    europeanButton.setOnClickListener(this)
        // }
-        europeanButton?.setOnClickListener(this)
-        americanButton.setOnClickListener(this)
+        europeanButton?.setOnClickListener{
+            forecastImage.setImageResource(R.drawable.offline_weather)
+        }
+        americanButton?.setOnClickListener{
+            forecastImage.setImageResource(R.drawable.offline_weather2)
+        }
 
         Log.v(TAG, "Han llamado a onCreate")
 
