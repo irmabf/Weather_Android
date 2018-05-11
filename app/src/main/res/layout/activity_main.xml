@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/forecast_image"
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -22,6 +23,8 @@
 
 
         <Button
+            android:id="@+id/european_system_button"
+            android:textAllCaps="false"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -29,6 +32,8 @@
 
 
         <Button
+            android:id="@+id/american_system_button"
+            android:textAllCaps="false"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
