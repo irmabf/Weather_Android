@@ -1,13 +1,4 @@
-*.iml
-.gradle
-/local.properties
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
+
 # Created by https://www.gitignore.io/api/java,macos,gradle,kotlin,android,jetbrains,androidstudio
 
 ### Android ###
@@ -296,6 +287,17 @@ gradle-app.setting
 # Cache of project
 .gradletasknamecache
 
+
+*.iml
+.gradle
+/local.properties
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
 
